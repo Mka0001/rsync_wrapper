@@ -1,0 +1,44 @@
+Note: The thousand separator can be either a period (.) or a comma (,) depending on the language and regional settings.
+
+===================
+Total size example:
+===================
+
+Note: `Total file size` and `Total transferred file size` is two different thing, e.g. if you sync 4 files (400 MiB), but 2 files (200 MiB) already exist at destination, then `Total file size` will be 400 MiB, and `Total transferred file size` will be 200 MiB. From our point of view, the `Total transferred file size` value is the useful one.
+
+`Number of files: 2 (reg: 2)
+Number of created files: 0
+Number of deleted files: 0
+Number of regular files transferred: 0
+Total file size: 255.972.488 bytes
+Total transferred file size: 255.972.488 bytes
+Literal data: 0 bytes
+Matched data: 0 bytes
+File list size: 0
+File list generation time: 0,001 seconds
+File list transfer time: 0,000 seconds
+Total bytes sent: 99
+Total bytes received: 12
+
+sent 99 bytes  received 12 bytes  222,00 bytes/sec
+total size is 255.972.488  speedup is 2.306.058,45 (DRY RUN)`
+
+=================================
+Currently processed size example:
+=================================
+
+`    127.986.244  50%   11,90MB/s    0:00:10 (xfr#1, to-chk=1/2)`
+
+Meanings of columns:
+- Processed size in bytes,
+- Processed percentage,
+- Transfer speed,
+- Leftover time,
+- Nr. of transfer,
+- Number of remaining/total files.
+
+======================
+Exclude lines example:
+======================
+
+`total size is 255.972.488  speedup is 2.306.058,45`
